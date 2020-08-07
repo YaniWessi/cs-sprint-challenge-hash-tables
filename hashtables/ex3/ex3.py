@@ -2,7 +2,22 @@ def intersection(arrays):
     """
     YOUR CODE HERE
     """
+    # I need to hash the the
+    # i need to loop through the
+    #
     # Your code here
+    count = {}
+    result = []
+
+    for inner in arrays:
+        for number in inner:
+            if number not in count:
+                count[number] = 1
+            else:
+                count[number] += 1
+    for (key, value) in count.items():
+        if value > 1:
+            result.append(key)
 
     return result
 
